@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="tmp.pojo.TmpPojo" table="users" schema="ding95">
+		<id name="tmpid" type="java.lang.Long">
+			<column name="tmp_id" length="32" />
+			<generator class="sequence">
+				<param name="sequence">tmp_seq</param>
+			</generator>
+		</id>
+		<property name="tmp" type="java.lang.String">
+			<column name="tmp_name" length="12" />
+		</property>
+	</class>
+</hibernate-mapping>
